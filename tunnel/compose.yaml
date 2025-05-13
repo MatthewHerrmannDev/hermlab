@@ -1,6 +1,6 @@
 services:
-  cloudflared:
-    container_name: cloudflared
+  tunnel:
+    container_name: tunnel
     image: cloudflare/cloudflared:latest
     restart: unless-stopped
     command: tunnel --no-autoupdate run
